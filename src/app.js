@@ -12,5 +12,5 @@ app.use(rutaIndex)
 
 
 app.listen(port,()=>{
-    console.log(`Servidor andando en el puerto ${PORT}`);
+    console.log(`Servidor andando en el puerto ${port}`);
 })
