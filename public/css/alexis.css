@@ -1,0 +1,75 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(23, 77, 240);
+}
+
+h1{
+    text-decoration: underline;
+    text-align: center;
+}
+
+.container{
+    position: relative;
+    top: 50px;
+    left: 3%;
+    width: 97%;
+}
+
+.primera-foto,.segunda-foto,.tercera-foto{
+    height: 700px;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-name: aparece;
+}
+.segunda-foto{
+    position: relative;
+    left: 5%;
+    width: 600px;
+}
+
+.palabra{
+    font-size: 28px;
+    position: relative;
+    left: 55%;
+    width: 40%;
+    bottom: 500px;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-name: aparece;
+}
+
+li{
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 173, 96);
+    position: relative;
+    bottom: 170px;
+    font-size: 30px;
+}
+
+.franco{
+    color: rgb(223, 28, 67);
+}
+
+.rocio{
+    color: blueviolet;
+}
+
+.ariel{
+    color: salmon;
+}
+
+@keyframes aparece{
+    0%{opacity: 0%;}
+    50%{opacity: 50%;}
+    100%{opacity: 100%;}
+}
