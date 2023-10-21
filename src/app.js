@@ -1,7 +1,7 @@
 const express = require('express');
 const rutaIndex = require('./routs');
 const app = express();
-const PORT = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.static('public'))
 
@@ -11,6 +11,6 @@ app.set('views', './src/views')
 app.use(rutaIndex)
 
 
-app.listen(PORT,(req,res)=>{
+app.listen(port,()=>{
     console.log(`Servidor andando en el puerto ${PORT}`);
 })
